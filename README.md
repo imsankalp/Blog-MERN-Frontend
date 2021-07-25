@@ -1,3 +1,14 @@
+# Blog Application
+## This is a frontend repo of Blog application which can perform all the CRUD operations.
+
+### Tech Stack for frontend:
+- React js
+
+### Link for the backend repo :
+[Blog-Mern-Backend](https://github.com/imsankalp/Blog-Mern-Backend)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
