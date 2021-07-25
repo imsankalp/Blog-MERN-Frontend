@@ -20,7 +20,7 @@ class Blog extends Component {
 						<Card.Text>{this.props.content}</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">Last updated 3 mins ago</small>
+						<small className="text-muted">{this.props.createdAt}</small>
 					</Card.Footer>
 				</Card>
 			</div>
