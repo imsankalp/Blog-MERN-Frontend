@@ -10,7 +10,7 @@ class BlogList extends Component {
 		};
 	}
 	async componentDidMount() {
-		const fetchedBlogs = await axios.get("/blog");
+		const fetchedBlogs = await axios.get("/blogs");
 		console.log(fetchedBlogs);
 		this.setState({ blogs: fetchedBlogs.data });
 	}
@@ -19,6 +19,7 @@ class BlogList extends Component {
 			return (
 				<Blog
 					key={blog._id}
+					id={blog._id}
 					title={blog.title}
 					img={blog.img}
 					content={blog.content}

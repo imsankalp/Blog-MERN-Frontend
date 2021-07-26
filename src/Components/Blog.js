@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./Blog.css";
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 class Blog extends Component {
 	render() {
 		return (
@@ -17,7 +19,16 @@ class Blog extends Component {
 						</footer>
 					</blockquote>
 					<Card.Body>
-						<Card.Text>{this.props.content}</Card.Text>
+						<Card.Text>
+							{this.props.content.substring(0, 150)}
+							<span>
+								<Link to={`/blogs/${this.props.id}`}>
+									<Button style={{ margin: "5px" }} variant="success">
+										Read More
+									</Button>
+								</Link>
+							</span>
+						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
 						<small className="text-muted">{this.props.createdAt}</small>
