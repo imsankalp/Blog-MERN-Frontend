@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Blog.css";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Moment from "react-moment";
 
 class Blog extends Component {
 	render() {
@@ -31,7 +32,9 @@ class Blog extends Component {
 						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">{this.props.createdAt}</small>
+						<small className="text-muted">
+							<Moment fromNow>{this.props.createdAt}</Moment>
+						</small>
 					</Card.Footer>
 				</Card>
 			</div>

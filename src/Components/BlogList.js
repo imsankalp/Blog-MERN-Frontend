@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Blog from "./Blog";
 import axios from "axios";
 import { Card, Button } from "react-bootstrap";
+
 class BlogList extends Component {
 	constructor(props) {
 		super(props);

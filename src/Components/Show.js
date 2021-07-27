@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import Moment from "react-moment";
 
 class Show extends Component {
 	constructor(props) {
@@ -61,7 +62,9 @@ class Show extends Component {
 						</Card.Text>
 					</Card.Body>
 					<Card.Footer>
-						<small className="text-muted">{this.state.createdAt}</small>
+						<small className="text-muted">
+							<Moment fromNow>{this.state.createdAt}</Moment>
+						</small>
 					</Card.Footer>
 				</Card>
 			</div>
